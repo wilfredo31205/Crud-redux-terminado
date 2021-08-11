@@ -1,0 +1,29 @@
+{
+  "productos": [
+    {
+      "nombre": "sfdff",
+      "precio": 2515,
+      "id": "2151"
+    },
+    {
+      "nombre": "ddsv",
+      "precio": 481,
+      "id": "111851"
+    },
+    {
+      "nombre": "Brahma Ligth",
+      "precio": 250,
+      "id": "001"
+    },
+    {
+      "nombre": "fnfn",
+      "precio": 4,
+      "id": "12"
+    },
+    {
+      "nombre": "FGSD",
+      "precio": 325,
+      "id": "018518"
+    }
+  ]
+}
