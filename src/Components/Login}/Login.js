@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
 import { Link } from '@material-ui/core';
+import { MostrarAlertaLogin , ocultarAlertaAction } from '../../actions/AlertaAction';
+import { useSelector , useDispatch } from 'react-redux';
 
 
 
@@ -17,7 +19,11 @@ const Login = () => {
     // state de errores
 
 
-    const [Error, setError] = useState(false)
+
+    const dispatch = useDispatch();
+
+    const alertaLogin = useSelector(state=>state.alerta.alertas)
+
 
 
 
@@ -54,13 +60,31 @@ const Login = () => {
 
               console.log('Campos vacios');
 
-                setError(true)
+
+                const alerta = {
+
+
+                    msg: 'Favor de completar los campos',
+
+       
+
+                    classes :"error"
+
+
+                }
+
+                dispatch(MostrarAlertaLogin(alerta));
+
 
                 return ; 
 
           }
-            
-            setError(false)
+
+
+          // si no hay errores 
+
+          dispatch(ocultarAlertaAction());
+        
 
 
 
@@ -149,7 +173,7 @@ const Login = () => {
 
 </form>
 
-{Error? <p className="error">Campos vacios favor de llenarlos </p> : null }
+{alertaLogin? <p className={alertaLogin.classes}>{alertaLogin.msg}</p> : null }
    
 
         </div>

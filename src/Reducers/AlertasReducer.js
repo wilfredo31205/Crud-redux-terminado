@@ -1,9 +1,12 @@
 
+
 import { Switch } from 'react-router-dom';
 import {
 
     MOSTRAR_ALERTA,
-    OCULTAR_ALERTA 
+    MOSTRAR_ALERTA_LOGIN,
+    MOSTRAR_NOTIFICACION_REGISTRO,
+    OCULTAR_ALERTA
 
  } from '../types/index';
 
@@ -29,6 +32,7 @@ export default function(state = initialState , action){
 
 
             case  MOSTRAR_ALERTA:
+          
             
                 return{
 
@@ -39,6 +43,41 @@ export default function(state = initialState , action){
 
 
                 }
+                case  MOSTRAR_ALERTA_LOGIN:
+
+                
+                    return{
+
+
+                        ...state,
+    
+                        alertas: action.payload
+    
+    
+                    }
+                        
+
+                case MOSTRAR_NOTIFICACION_REGISTRO:
+
+                    return{
+
+                        ...state,
+                        notificaciones: action.payload
+
+
+
+                    }
+                    
+                case  OCULTAR_ALERTA:
+
+                    return{
+
+                        ...state,
+                        alerta: null
+
+
+                    }
+
 
 
 

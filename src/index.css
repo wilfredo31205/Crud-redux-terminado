@@ -1,6 +1,4 @@
 
-
-
 body {
   margin: 0;
   margin: 0;
@@ -93,6 +91,7 @@ background-repeat: no-repeat;
 
   color: rgb(236, 84, 84);
   font-weight: bold;
+  margin-left: 12px;
 
 
 }
@@ -534,7 +533,6 @@ input{
 }
 }
   
-
 @media only screen and (max-width: 600px) {
   
   .campo{
