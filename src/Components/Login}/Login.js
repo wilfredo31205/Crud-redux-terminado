@@ -3,6 +3,10 @@ import React, { useState } from 'react'
 import { Link } from '@material-ui/core';
 import { MostrarAlertaLogin , ocultarAlertaAction } from '../../actions/AlertaAction';
 import { useSelector , useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+
+
+
 
 
 
@@ -25,7 +29,7 @@ const Login = () => {
     const alertaLogin = useSelector(state=>state.alerta.alertas)
 
 
-
+    const history = useHistory();
 
 
 
@@ -86,6 +90,7 @@ const Login = () => {
           dispatch(ocultarAlertaAction());
         
 
+            history.push('/')
 
 
        }

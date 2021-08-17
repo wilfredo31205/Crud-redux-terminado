@@ -1,5 +1,4 @@
 
-
 import { Switch } from 'react-router-dom';
 import {
 
@@ -73,7 +72,7 @@ export default function(state = initialState , action){
                     return{
 
                         ...state,
-                        alerta: null
+                        alerta: state.payload
 
 
                     }

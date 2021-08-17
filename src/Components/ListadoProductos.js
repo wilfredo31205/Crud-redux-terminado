@@ -59,7 +59,7 @@ const ListadoProductos = () => {
             <>
 
 
-        <h4 className="card-panel teal amber accent-4  center-align titulo  ">Listado de Bebidas</h4>
+        <h4 className="ListadoBebida">Listado de Bebidas</h4>
 
        
 
@@ -70,25 +70,40 @@ const ListadoProductos = () => {
 
      
     {error ? <p className="error">Ha ocurrido un error </p>: null}
+{/* 
+    <img src={presi} className="presi" alt="imagenfondo" /> */}
 
-    <img src={presi} className="presi" alt="imagenfondo" />
+    <table>
 
-    <table className="table highlight centered responsive-table  ">
+      <thead>
 
+     
 
-
-      <tr className="">
+      {/* <tr className="">
               <th className="bebida">Bebida</th>
-              <th className="bebida">Precio</th>
+              <th className="precio">Precio</th>
               <th className="bebida">Acciones</th>
           </tr>
-  
-        <thead>
+
+   */}
+
+<tr>
+
+<th>Bebidas</th>
+
+<th className="precio">Precio</th>
+
+<th className="acciones">Acciones</th>
+
+</tr>
 
 
-        </thead>
+</thead>
+      
 
-        <tbody>
+<tbody>
+
+        
           
         
          { ProductoBebidas.length === 0 ? 'No hay productos' : (
@@ -120,18 +135,16 @@ const ListadoProductos = () => {
 
 
 
-        </tbody>
-
       
 
 
 
         
-
+ </tbody>
         
 
 
-      </table>
+     </table> 
 
 
             </>

@@ -58,11 +58,11 @@ export function RegistroAlerta(notificaciones){
 }
 
 
-export function ocultarAlertaAction(){
+export function ocultarAlertaAction(ocultar){
 
    return(dispatch)=>{
 
-      dispatch(ocultarAlerta)
+      dispatch(ocultarAlerta(ocultar))
 
 
 
@@ -107,10 +107,10 @@ const RegistroAlertaCliente = (notificaciones)=>({
 
 
 
-const ocultarAlerta = ()=>({
+const ocultarAlerta = (ocultar)=>({
 
    type: OCULTAR_ALERTA,
-   payload : null
+   payload: ocultar
 
 
 

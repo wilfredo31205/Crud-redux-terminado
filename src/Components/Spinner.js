@@ -8,7 +8,7 @@ const Spinner = () => {
 
 
 
-<div class="sk-circle">
+<div class="sk-circle spinner">
   <div class="sk-circle1 sk-child"></div>
   <div class="sk-circle2 sk-child"></div>
   <div class="sk-circle3 sk-child"></div>
@@ -21,7 +21,7 @@ const Spinner = () => {
   <div class="sk-circle10 sk-child"></div>
   <div class="sk-circle11 sk-child"></div>
   <div class="sk-circle12 sk-child"></div>
-</div>      
+</div>    
       );
 }
  

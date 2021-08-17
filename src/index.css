@@ -20,6 +20,565 @@ body {
   
 }
 
+/* MOVIL FIST DEL PANEL PRINCIPAL*/
+
+@media screen and (max-width: 768px) {
+  
+  .FormularioInput{
+
+
+    max-width: 50%;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-left: 38px;
+
+
+}
+
+.TituloBebida{
+
+  background: #E50914;
+  text-align: center;
+
+
+}
+
+.ListadoBebida{
+
+  background: #E50914;
+  text-align: center;
+
+
+}
+
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .botonAgregar{
+
+
+    margin-left: 80px;
+  
+  
+  
+  }
+
+
+}
+
+
+/* imagen */
+
+
+@media screen and (max-width: 768px) {
+  
+  .imagen{
+
+    max-width: 50px;
+  
+  
+  
+  }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .botonlimpiarr{
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin-bottom: 60px;
+    padding: 20px 80px 20px 80px;
+    
+  
+
+
+    /*
+padding: 90px 3px  100px 150px; 
+el relleno superior es de 90 px
+el relleno derecho es de 3 px
+el relleno inferior es de 100 px
+el relleno izquierdo es 150px
+*/
+
+
+    
+  
+  
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  .contenedor { /* cetrando el contenido*/
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  
+  th.acciones { /* cetrando el contenido*/
+
+    margin-right: 20%;
+    width: 50%;
+
+
+  }
+
+
+  table{
+
+    position: relative;
+    right: 15%;
+
+  }
+
+
+  .botoneliminar{
+
+    position: relative;
+    right: 67%;
+
+  }
+
+
+
+
+    table{
+
+      padding-right: 50%;
+
+    }
+
+    table,th,td{
+
+      border: 1px solid black;
+      border-collapse:collapse ;
+      
+      max-width: 60;
+    }
+  
+    th.precio{
+
+      padding-left: 20px;
+  
+  
+    
+    }
+  
+    th.acciones{
+
+      padding-right: 20%;
+  
+      margin-right: 50%;
+    
+    }
+  
+
+
+
+
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .EditandoFormulario{ /* cetrando el contenido*/
+
+    display: block;
+
+
+
+  }
+
+
+  .inputNombre{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ListadoBebida{
+
+  color: rgb(245, 245, 234);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffbf00;
+  padding: 20px 10px 20px 10px;
+  margin-top: 2px;
+/*
+padding: 90px 3px  100px 150px; 
+el relleno superior es de 90 px
+el relleno derecho es de 3 px
+el relleno inferior es de 100 px
+el relleno izquierdo es 150px
+*/
+}
+
+
+
+
+
+
+
+.TituloBebida{
+
+  color: rgb(245, 245, 234);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffbf00;
+  padding: 20px 10px 20px 10px;
+/*
+padding: 90px 3px  100px 150px; 
+el relleno superior es de 90 px
+el relleno derecho es de 3 px
+el relleno inferior es de 100 px
+el relleno izquierdo es 150px
+*/
+}
+
+
+.FormularioInput{
+  display: flex;
+  margin-top: 60px;
+  flex-direction: row;
+  padding-right: 500px;
+
+
+
+}
+
+.imagen{
+  width: 460px;
+  position: fixed;
+  left: 883px;
+  top: 250px;
+  border-radius: 50px;
+  
+  
+}
+
+
+/* tables*/
+
+  table,th,td{
+
+    border: 1px solid black;
+    border-collapse:collapse ;
+    
+  }
+
+
+
+th.precio{
+
+margin-right: 20px;
+
+
+}
+
+
+.tables{
+
+    width: 100%;
+
+  }
+  
+  
+  .bebida{
+  
+ 
+    text-align: center;
+  
+  }
+
+table{
+
+
+  margin-left: 50px;
+
+
+}
+
+
+
+
+th{
+
+
+
+text-align: center;
+padding-left: 200px;
+background-color: cadetblue;
+
+
+  
+}
+
+
+
+
+
+td.nombre{
+
+  margin-left: 75%;
+  text-align: center;
+  
+}
+
+
+td.precio{
+
+  text-align: center;
+
+}
+
+th{
+
+ padding-left: 10px;
+  width: 400px;
+
+  margin-right: 10px;
+
+}
+
+/* boton de editar de listado*/
+
+.botoneditar{
+  background-color:#FF8200;
+
+  padding: 10px 25px 15px 20px;
+  border-radius: 5px;
+
+  margin-left: 10px;
+  margin-top: 50px;
+
+
+}
+
+.botoneliminar{
+
+
+  background-color:#FF8200;
+
+  padding: 10px 25px 15px 20px;
+  border-radius: 5px;
+
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-left: 200px;
+
+}
+
+
+
+
+
+button{
+
+  margin-left: 10%;
+  position: relative;
+    bottom:  1px;
+    right: 5px;
+
+}
+
+
+
+
+ .inputNombre{
+
+  padding: 15px 20px 8px 20px;
+
+  margin-bottom: 40px;
+
+  text-align: center;
+
+  border-radius: 3px;
+
+  margin-left: 50px;
+
+
+ /*
+padding: 90px 3px  100px 150px; 
+el relleno superior es de 90 px
+el relleno derecho es de 3 px
+el relleno inferior es de 100 px
+el relleno izquierdo es 150px
+*/
+
+
+
+
+
+
+}
+
+.botonAgregar{
+
+
+  background-color:#FF8200;
+
+  padding: 20px 80px 20px 80px;
+  border-radius: 5px;
+
+  margin-left: 60px;
+  margin-top: 50px;
+
+
+  /*
+padding: 90px 3px  100px 150px; 
+el relleno superior es de 90 px
+el relleno derecho es de 3 px
+el relleno inferior es de 100 px
+el relleno izquierdo es 150px
+*/
+
+
+
+}
+
+
+
+
+.botonlimpiar{
+
+  background-color:#FF8200;
+  
+  margin-left: 60px;
+  padding: 20px 80px 20px 80px;
+  border-radius: 5px;
+
+  margin-top: 20px;
+
+
+
+
+}
+.favorita{
+
+  text-align: center;
+  background-color: rgb(66, 243, 69);
+  padding-top: 5px;
+  margin-top: 0px;
+  color: white;
+ 
+}
+
+.error1{
+  text-align: center;
+  background-color: red;
+  padding: 2px 0px 3px 0px;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+
+
+
+    /*
+padding: 90px 3px  100px 150px; 
+el relleno superior es de 90 px
+el relleno derecho es de 3 px
+el relleno inferior es de 100 px
+el relleno izquierdo es 150px
+*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS AL LOGIN Y REGISTRO D*/
+
 .contenedor { /* cetrando el contenido*/
   width: 90%;
   margin: 0 auto;
@@ -297,15 +856,16 @@ form legend{
 
  label{
 
-  color: white;
   margin-left: 100px;
-  margin-bottom: 200px;
+
+  margin-top: 40px;
+
 
 }
 
 .inputUsuario{
 
-  margin-top: 0px; 
+  margin-top: 20px; 
 
 
 }
@@ -316,33 +876,23 @@ form legend{
 
 @media (max-width: 768px) {
   .formulario-login {
-    width: 100%;
-  
 
-    position: relative;
-
-    right: 32px;
- 
-    bottom: 80px;
-    
-    margin: 15rem 3rem 1rem 7rem;
-    padding: 20px 45px  90px 50px;
-
-
-
-
-    /*
-  
-    
-el relleno superior es de 90 px
-el relleno derecho es de 3 px
-el relleno inferior es de 100 px
-el relleno izquierdo es 150px
-    
-    */
 
   
   }
+
+.inputNombre{
+
+  display: flex;
+  flex-direction: row;
+  
+
+  margin-right: 200px;
+
+}
+
+
+
 
   .contenedor { /* cetrando el contenido*/
     width: 100%;
@@ -365,9 +915,34 @@ el relleno izquierdo es 150px
 
 
 
+/* formulario de editar*/
 
 
 
+.EditandoFormulario{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  margin-top: 8%;
+
+
+}
+
+
+.botonAgregarr{
+
+  background-color:#FF8200;
+
+  padding: 20px 80px 20px 80px;
+  border-radius: 5px;
+
+  margin-left: 280px;
+  margin-top: 100px;
+
+
+}
 
 
 

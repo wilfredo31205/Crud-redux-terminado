@@ -1,29 +1,39 @@
 {
   "productos": [
     {
-      "nombre": "sfdff",
-      "precio": 2515,
-      "id": "2151"
+      "nombre": "ñoño",
+      "precio": "1851851",
+      "id": "818515"
     },
     {
-      "nombre": "ddsv",
-      "precio": 481,
-      "id": "111851"
+      "nombre": "fsadf",
+      "precio": "185185",
+      "id": "18585185"
     },
     {
-      "nombre": "Brahma Ligth",
-      "precio": 250,
-      "id": "001"
+      "nombre": "afdf",
+      "precio": "18185",
+      "id": "185018501851"
     },
     {
-      "nombre": "fnfn",
-      "precio": 4,
-      "id": "12"
+      "nombre": "sfsafa",
+      "precio": "1501851",
+      "id": "8181"
     },
     {
-      "nombre": "FGSD",
-      "precio": 325,
-      "id": "018518"
+      "nombre": "safsadfa",
+      "precio": "1851891",
+      "id": "818518596"
+    },
+    {
+      "nombre": "sfsadf",
+      "precio": "212851",
+      "id": "851851851"
+    },
+    {
+      "nombre": "gffdsgs",
+      "precio": "185418518",
+      "id": "5185185196"
     }
   ]
 }

@@ -18,4 +18,4 @@ De donde :
 
 para crear una api json-server o una fake json-server : se coloca el comando npx json-server db.json --port 4000
 
-de donde db.json es el archivo json con la apì que creamos 
+de donde db.json es el archivo json con la apï¿½ que creamos 

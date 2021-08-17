@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
 
 import {  useDispatch , useSelector } from "react-redux";
 
+// custom hook
+
+import useForm from './hooks/useForm';
+
+
+
 
 // useDispatch nos sirve para mandar a ejecutar las acciones que tengamos 
 //useSelector es una forma en la que vamos a acceder al state dentro del componente
@@ -14,7 +20,7 @@ import {  useDispatch , useSelector } from "react-redux";
 import Presidente from '../images/presidente.jpg';
 
 
-
+import presi from '../images/presi.gif';
 
 // action de redux 
 
@@ -23,7 +29,8 @@ import { CrearNuevoProductoAction } from '../actions/BebidasAction'; // importan
 
 
 import { MostrarAlerta } from '../actions/AlertaAction';
-import Spinner from './Spinner';
+
+import Spinner from '../Components/Spinner';
 
 
 
@@ -36,11 +43,61 @@ const Formulario = ({history}) => { // utilizamos history para redireccionar
 
     // state
 
-    const [nombre, setNombreBebida] = useState('')
+    // const [nombre, setNombreBebida] = useState('')
 
-    const [precio, setPrecio] = useState(0)
+    // const [precio, setPrecio] = useState(0)
 
-    const [id, setID] = useState(' ')
+    // const [id, setID] = useState(' ')
+
+
+
+    // const [Datos, setDatos] = useState({
+
+    //     nombre: '',
+    //     precio : '',
+    //     id : ''
+
+    // })
+
+
+
+    // const ChangeInput = (e)=>{
+
+    //     setDatos({
+
+    //         ...Datos,
+
+    //         [e.target.name] : e.target.value
+
+
+
+    //     })
+
+
+
+    // }
+
+
+
+    const initialForm = {
+        nombre: '',
+        precio : '',
+        id : ''
+    };
+    
+    const [ formValues, handleInputChange, reset ] = useForm( initialForm )
+
+
+
+
+
+
+
+
+    const { nombre , precio , id } = formValues;
+
+//  const { nombre , precio , id } = Datos;
+
 
 
 
@@ -100,12 +157,6 @@ const Formulario = ({history}) => { // utilizamos history para redireccionar
         // validar el formulario
 
         if(nombre.trim() === ' ' || precio <= 0 || id.trim() === ''){
-
-
-
-
-                
-
 
 
                 const respuesta = {
@@ -193,19 +244,34 @@ const Formulario = ({history}) => { // utilizamos history para redireccionar
     }
 
 
+    const ClearDates = (e) =>{
+
+
+        reset();
+       
+   
+
+
+        }
+
+   
+
+        
     
 
     return (
      
         <Fragment>
 
-        <form
+        <form className="formulario"
 
             onSubmit={submitNuevoProducto}
         
         >
-        <div className="row">
-        <div className="card-panel teal amber accent-4  center-align titulo ">Agrega tu bebida favorita</div>
+        <div className="">
+        <div className="TituloBebida">Ventas de Bebidas</div>
+
+        <h2 className="favorita">Agrega tu Bebida favorita</h2>
             
         { alerta  ? <p className={alerta.className}>{alerta.msg}</p> : null}
         
@@ -213,111 +279,99 @@ const Formulario = ({history}) => { // utilizamos history para redireccionar
 
 
   
-        <div  className="input-field col s4 m4  l2">
+        <div className="FormularioInput">
 
+        <div  className="formulario">
 
+        <label Htmlfor="">Nombre de Bebida</label>
         <input 
         
         placeholder="Nombre"
         type="text"
-        className="validate animate__animated animate__flip"
+        className="inputNombre"
         value={nombre}
-        
-        onChange={e=>setNombreBebida(e.target.value)}
+        name="nombre"
+        onChange={ handleInputChange}
+        // onChange={e=>setNombreBebida(e.target.value)}
         
         />
-        <label for="first_name ">Nombre de Bebida</label>
+ 
         </div>
 
 
          <div  className="input-field col s4 m4 l2">
 
            
-
+         <label for="first_name ">Precio de Bebida</label>
         <input 
         
         placeholder="Precio "
         type="number"
-        className="validate animate__animated animate__flip"
+        className="inputNombre"
         value={precio}
-        onChange={e=>setPrecio(Number(e.target.value))}
-     
+        name="precio"
+        // onChange={e=>setPrecio(Number(e.target.value))}
+        onChange={ handleInputChange}
         
         />
-        <label for="first_name ">Precio de Bebida</label>
+
         </div>
         
 
 
-         <div  className="input-field col s4 l2">
-
+         <div  className="">
+         <label for="first_name ">Codigo de Bebida</label>
         <input 
         
         placeholder="Codigo "
         type="number"
-        className="validate animate__animated animate__flip"
+        className="inputNombre"
         value={id}
-        onChange={e=>setID(e.target.value)}
-     
+        name="id"
+        // onChange={e=>setID(e.target.value)}
+        onChange={ handleInputChange}
         
         />
-        <label for="first_name ">Codigo de Bebida</label>
+  
         </div>
 
       
 
         </div>
 
-
+        </div>
         
-        <button class="btn waves-effect waves-light btn-large boton   green darken-1animate__animated animate__backInUp boton" type="submit" name="action"
+        <button class=" botonAgregar" type="submit" name="action"
         
-        
-       
+    
         >
             Agregar Bebida
             
-         
-            <i class="material-icons left">add_shopping_cart</i>
+            </button>
 
 
-            
+
+      
+            { Cargando ?<Spinner/> : null }
+  
+    
+           
+            <button className=" botonlimpiar botonlimpiarr" type="button" name="action"
+            onClick={ClearDates}    
+    
+        >
+           Limpiar Campos
             
             </button>
 
-      
-    
 
-  
-    
-
-
-
-
-
-        <div className="row">
-
-        <div className="col s4   ">
-
-      
-
-        <img src={Presidente} className="imagen" alt="imagenfondo" />
-
-        
-
-        </div>
-
-       
-
-
-
-        </div>
 
         </form>
 
 
+      
 
-        { Cargando ?<Spinner/> : null }
+        <img src={ Presidente} className="imagen" alt="imagenfondo" />
 
 
 

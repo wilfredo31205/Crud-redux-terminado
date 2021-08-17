@@ -118,17 +118,20 @@ const FormularioEditar = () => {
 
 
         <div className="row">
-        <div class="card-panel teal amber accent-4  center-align titulo ">Agrega tu bebida favorita</div>
+        <div class="TituloBebida">Agrega tu bebida favorita</div>
             
   
-        <div  className="input-field col s4 m4  l2">
+        <div  className="EditandoFormulario">
+
+        <div className="formularioEditar">
 
 
         <input 
         
         placeholder="Nombre"
         type="text"
-        className="validate animate__animated animate__flip"
+        className="validate animate__animated animate__flip inputNombre"
+ 
         name="nombre"
         value={Bebidas.nombre}
         onChange={Onchangeformulario}
@@ -148,7 +151,7 @@ const FormularioEditar = () => {
         
         placeholder="Precio "
         type="number"
-        className="validate animate__animated animate__flip"
+        className="validate animate__animated animate__flip inputNombre"
         name="precio"
        value={Bebidas.precio}
        onChange={Onchangeformulario}
@@ -168,7 +171,7 @@ const FormularioEditar = () => {
         
         placeholder="Codigo "
         type="number"
-        className="validate animate__animated animate__flip"
+        className="validate animate__animated animate__flip inputNombre"
          value={Bebidas.id}
          name="id"
          onChange={Onchangeformulario}
@@ -185,15 +188,14 @@ const FormularioEditar = () => {
 
 
         
-        <button class="btn waves-effect waves-light btn-large boton   green darken-1animate__animated animate__backInUp boton" type="submit" name="action"
+        <button className="botonAgregarr" name="action"
         
         
        
         >
            Guardar cambios 
          
-            <i class="material-icons left">add_shopping_cart</i>
-
+   
 
     
             </button>
@@ -220,7 +222,7 @@ const FormularioEditar = () => {
        
 
 
-
+        </div>
         </div>
 
         </form>

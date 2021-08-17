@@ -169,7 +169,64 @@ const Bebidas = ({bebidas}) => {
         
         <>
 
-        <tr className="centrado">
+
+
+
+  <tr>
+
+    <td className="nombre">{nombre}</td>
+
+    <td className="precio">{precio}</td>
+
+    <td className="boton">
+
+    <button className=" botoneditar"   
+     onClick={()=>redireccionarEdicion(bebidas)}
+
+    type="button"name="action">Editar
+
+  
+    </button> 
+
+
+
+    <button className="botoneliminar" 
+onClick={ () =>confirmationDelete(id)}
+type="submit"name="action">Eliminar
+
+
+</button>
+  
+
+
+
+ {/* <button className="btn waves-effect waves-light editar  green darken-1" 
+onClick={ () =>confirmationDelete(id)}
+type="submit"name="action">Eliminar
+<i class="material-icons right">delete_outline</i>
+
+</button> */}
+
+
+    </td>
+
+
+    <td className="boton">
+
+
+
+    </td>
+
+
+  </tr>
+
+  
+
+
+
+
+
+        {/* <tr className="centrado">
 
 
 
@@ -187,7 +244,7 @@ const Bebidas = ({bebidas}) => {
     type="button"name="action">Editar
 
     <i class="material-icons right">create</i>
-    </button>
+    </button> */}
 
 {/* <Modal
 
@@ -274,7 +331,7 @@ const Bebidas = ({bebidas}) => {
 
 
 
-<button className="btn waves-effect waves-light editar  green darken-1" 
+{/* <button className="btn waves-effect waves-light editar  green darken-1" 
 onClick={ () =>confirmationDelete(id)}
 type="submit"name="action">Eliminar
 <i class="material-icons right">delete_outline</i>
@@ -287,7 +344,7 @@ type="submit"name="action">Eliminar
 
 
 
-        </tr>
+        </tr> */}
 
         
 
