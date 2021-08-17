@@ -1,4 +1,3 @@
-
 import React, { Fragment, useEffect, useState} from 'react';
 import Formulario from './Formulario';
 
@@ -118,20 +117,17 @@ const FormularioEditar = () => {
 
 
         <div className="row">
-        <div class="TituloBebida">Agrega tu bebida favorita</div>
+        <div class="card-panel teal amber accent-4  center-align titulo ">Agrega tu bebida favorita</div>
             
   
-        <div  className="EditandoFormulario">
-
-        <div className="formularioEditar">
+        <div  className="input-field col s4 m4  l2">
 
 
         <input 
         
         placeholder="Nombre"
         type="text"
-        className="validate animate__animated animate__flip inputNombre"
- 
+        className="validate animate__animated animate__flip"
         name="nombre"
         value={Bebidas.nombre}
         onChange={Onchangeformulario}
@@ -151,7 +147,7 @@ const FormularioEditar = () => {
         
         placeholder="Precio "
         type="number"
-        className="validate animate__animated animate__flip inputNombre"
+        className="validate animate__animated animate__flip"
         name="precio"
        value={Bebidas.precio}
        onChange={Onchangeformulario}
@@ -171,7 +167,7 @@ const FormularioEditar = () => {
         
         placeholder="Codigo "
         type="number"
-        className="validate animate__animated animate__flip inputNombre"
+        className="validate animate__animated animate__flip"
          value={Bebidas.id}
          name="id"
          onChange={Onchangeformulario}
@@ -188,14 +184,15 @@ const FormularioEditar = () => {
 
 
         
-        <button className="botonAgregarr" name="action"
+        <button class="btn waves-effect waves-light btn-large boton   green darken-1animate__animated animate__backInUp boton" type="submit" name="action"
         
         
        
         >
            Guardar cambios 
          
-   
+            <i class="material-icons left">add_shopping_cart</i>
+
 
     
             </button>
@@ -222,16 +219,13 @@ const FormularioEditar = () => {
        
 
 
-        </div>
+
         </div>
 
         </form>
 
 {/* 
         { cargando ? <p>Cargando...</p> : null }
-
-
-
         { error ? <p className="error">Hubo un error brother</p> : null } */}
 
 
